@@ -1,0 +1,97 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: auto;
+  height: 100vh;
+  
+  margin-inline: 13.33%;
+}
+
+/* navbar */
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  height: auto;
+
+  padding-inline: 24px;
+  padding-block: 24px;
+}
+.navbarLogo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  width: auto;
+  height: auto;
+}
+.navbarActions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  width: auto;
+  height: auto;
+
+  gap: 48px;
+}
+
+.navbarBrand{
+  font-size: 36px;
+  color: var(--primary-4);
+  transition: 0.5s;
+}
+.navbarBrand:hover {
+  color: var(--primary-5);
+  scale: 1.2;
+}
+
+.navbarText {
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--primary-4);
+  transition: 0.5s;
+}
+.navbarText:hover {
+  color: var(--primary-5);
+  scale: 1.2;
+  margin: 12px;
+}
+
+.navbarIcon {
+  width: 28px;
+  height: 28px;
+
+  margin-top: 6px;
+
+  transition: 0.3s;
+  color: var(--secondary-2);
+}
+.navbarIcon:hover {
+  scale: 1.2;
+}
+
+/* content */
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+
+  padding: 0 20px;
+
+  background-color: darkblue;
+}
