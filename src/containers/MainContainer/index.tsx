@@ -41,22 +41,22 @@ const CustomNavbar = () => {
         </h1>
       </Navbar.Brand>
       <Nav activeKey={0} className={styles.navbarActions}>
-        <Nav.Item>
-          <Nav.Link>
+        <Nav.Item >
+          <Nav.Link href="#section1">
             <h6 className={quicksand.className.concat(" ", styles.navbarText)}>
               About
             </h6>
           </Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link>
+          <Nav.Link href="#section2">
             <h6 className={quicksand.className.concat(" ", styles.navbarText)}>
               Experience
             </h6>
           </Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link>
+          <Nav.Link href="#section3">
             <h6 className={quicksand.className.concat(" ", styles.navbarText)}>
               Contact Me
             </h6>

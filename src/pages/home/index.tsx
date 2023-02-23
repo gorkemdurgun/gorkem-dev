@@ -21,12 +21,12 @@ const CustomText = (props: { text: string; className?: any; id?: string }) => {
   );
 };
 
-const PageOne: NextPage = () => {
+const AboutPage: NextPage = (props) => {
   return (
-    <Container fluid className={styles.container}>
+    <Container id="section1" fluid className={styles.container}>
       <Row lg={6} className={styles.leftSide}>
         <Col lg={12} className={styles.leftContainer}>
-        <div className={styles.box2}></div>
+          <div className={styles.box2}></div>
           <div className={styles.box3}></div>
           <span>
             <CustomText text="Hi," className={styles.leftText} />
@@ -34,7 +34,7 @@ const PageOne: NextPage = () => {
             <CustomText text="Frontend Engineer" className={styles.leftText} />
           </span>
           <span>
-            <Button variant="light" className={styles.button}>
+            <Button href="#section3" variant="light" className={styles.button}>
               <CustomText text="Contact Me" className={styles.buttonText} />
             </Button>
           </span>
@@ -49,10 +49,29 @@ const PageOne: NextPage = () => {
   );
 };
 
+const ExperiencePage: NextPage = (props) => {
+  return (
+    <Container id="section2" fluid className={styles.container}>
+      <Row lg={6} className={styles.leftSide}>
+        <Col lg={12} className={styles.leftContainer}>
+          <div className={styles.box2}></div>
+          <div className={styles.box3}></div>
+          <span>
+            <CustomText text="Hi," className={styles.leftText} />
+            <CustomText text="I'm Görkem" className={styles.leftText} />
+            <CustomText text="Frontend Engineer" className={styles.leftText} />
+          </span>
+        </Col>
+      </Row>
+      </Container>
+  );
+};
+
 const HomePage: NextPage = () => {
   return (
     <MainContainer>
-      <PageOne />
+      <AboutPage />
+      <ExperiencePage />
     </MainContainer>
   );
 };
