@@ -17,10 +17,13 @@
   align-items: center;
   justify-content: space-between;
 
-  width: 100%;
+  width: 120%;
   height: auto;
+  padding-inline: 10%;
 
   background: var(--primary-background);
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
 }
 .navbarLogo {
   display: flex;
