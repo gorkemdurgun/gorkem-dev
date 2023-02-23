@@ -1,5 +1,7 @@
 import { Ubuntu, Quicksand } from "@next/font/google";
 import { NextPage } from "next";
+import Image from "next/image";
+import { useRouter } from "next/router";
 import { useState } from "react";
 import { Container, Navbar, Nav, Row, Col } from "react-bootstrap";
 import { MdOutlineNightsStay, MdOutlineWbSunny } from "react-icons/md";
@@ -14,27 +16,35 @@ const ubuntu = Ubuntu({ subsets: ["latin"], weight: "500" });
 const quicksand = Quicksand({ subsets: ["latin"], weight: "400" });
 
 const CustomNavbar = () => {
+  const router = useRouter();
+
   const [darkMode, setDarkMode] = useState(false);
+  const [activeTab, setActiveTab] = useState(0);
 
   const handleDarkMode = () => {
     setDarkMode(!darkMode);
   };
 
+  const handleSetActiveTab = (eventKey: any) => {
+    console.log(eventKey);
+  };
+
   return (
-    <Navbar sticky="top" bg="dark" variant="dark" className={styles.navbar}>
-      <Navbar.Brand className={styles.navbarLogo} href="#home">
-        <span className={quicksand.className.concat(" ", styles.navbarBrand)}>
-          Hi, I am
-          <h6 className={styles.animatedTitle}>
-            Görkem Durgun / Frontend Engineer
-          </h6>
-        </span>
+    <Navbar sticky="top" variant="dark" className={styles.navbar}>
+      <Navbar.Brand className={styles.navbarLogo}>
+        <h1 className={quicksand.className.concat(" ", styles.navbarBrand)}>
+          <Image
+            fill
+            src="https://media.licdn.com/dms/image/D4D03AQHHUP1JM105eQ/profile-displayphoto-shrink_400_400/0/1676999375589?e=1682553600&v=beta&t=7StIwo_RrWF6WkVrso-0Hdfhjndcbss3w8O35_1x-yQ"
+            alt="Logo"
+          />
+        </h1>
       </Navbar.Brand>
-      <Nav className={styles.navbarActions}>
+      <Nav activeKey={0} className={styles.navbarActions}>
         <Nav.Item>
           <Nav.Link>
             <h6 className={quicksand.className.concat(" ", styles.navbarText)}>
-              Who Am I?
+              About
             </h6>
           </Nav.Link>
         </Nav.Item>
@@ -73,7 +83,7 @@ const MainContainer: NextPage<MainContainerProps> = ({ children }) => {
     <Container fluid="md">
       <Col lg={12} className={styles.container}>
         <CustomNavbar />
-        <Container className={styles.content}>{children}</Container>
+        {children}
       </Col>
     </Container>
   );
