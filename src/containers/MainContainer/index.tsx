@@ -30,7 +30,7 @@ const CustomNavbar = () => {
   };
 
   return (
-    <Navbar sticky="top" variant="dark" className={styles.navbar}>
+    <Navbar sticky="top" className={styles.navbar}>
       <Navbar.Brand className={styles.navbarLogo}>
         <h1 className={quicksand.className.concat(" ", styles.navbarBrand)}>
           <Image
@@ -41,7 +41,7 @@ const CustomNavbar = () => {
         </h1>
       </Navbar.Brand>
       <Nav activeKey={0} className={styles.navbarActions}>
-        <Nav.Item >
+        <Nav.Item>
           <Nav.Link href="#section1">
             <h6 className={quicksand.className.concat(" ", styles.navbarText)}>
               About
