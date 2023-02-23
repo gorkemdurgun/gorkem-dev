@@ -1,3 +1,13 @@
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 18em;
+  }
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -6,7 +16,7 @@
 
   width: auto;
   height: 100vh;
-  
+
   margin-inline: 13.33%;
 }
 
@@ -45,7 +55,7 @@
   gap: 48px;
 }
 
-.navbarBrand{
+.navbarBrand {
   font-size: 36px;
   color: var(--primary-4);
   transition: 0.5s;
@@ -53,6 +63,18 @@
 .navbarBrand:hover {
   color: var(--primary-5);
   scale: 1.2;
+}
+
+.animatedTitle {
+  overflow: hidden;
+  position: relative;
+  width: 18em;
+  font-size: 20px;
+  white-space: nowrap;
+
+  color: var(--secondary-2);
+
+  animation: typewriter 3s steps(66) 1s 1 normal both;
 }
 
 .navbarText {

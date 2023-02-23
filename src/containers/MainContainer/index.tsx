@@ -23,9 +23,12 @@ const CustomNavbar = () => {
   return (
     <Navbar sticky="top" bg="dark" variant="dark" className={styles.navbar}>
       <Navbar.Brand className={styles.navbarLogo} href="#home">
-        <h2 className={quicksand.className.concat(" ", styles.navbarBrand)}>
-          Hi, I am <span className={ubuntu.className}>Görkem</span>
-        </h2>
+        <span className={quicksand.className.concat(" ", styles.navbarBrand)}>
+          Hi, I am
+          <h6 className={styles.animatedTitle}>
+            Görkem Durgun / Frontend Engineer
+          </h6>
+        </span>
       </Navbar.Brand>
       <Nav className={styles.navbarActions}>
         <Nav.Item>
