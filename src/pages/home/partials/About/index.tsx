@@ -11,7 +11,7 @@ const AboutPage: NextPage = (props) => {
         <Col lg={12} className={styles.leftContainer}>
           <div className={styles.box2}></div>
           <div className={styles.box3}></div>
-          <span>
+          <span className={styles.boxInfo}>
             <CustomText text="Hi," className={styles.leftText} />
             <CustomText text="I'm Görkem" className={styles.leftText} />
             <CustomText text="Frontend Engineer" className={styles.leftText} />
