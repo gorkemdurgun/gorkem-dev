@@ -8,6 +8,11 @@
     "description5": "Now, I work as a frontend developer and I love my job because I can use both my creative and technical sides. If you share similar interests, I'd love to grab a coffee and chat more!"
   },
   "tr": {
-    "description": "Bu eklenti hakkında bir açıklama."
+    "descriptionTitle": "Hakkımda",
+    "description1": "Merhaba! Ben Görkem Durgun ve kendim hakkında biraz bahsetmek istiyorum.",
+    "description2": "İlk önce, iki kedim var ve hayatımı onlar yönetiyor :) Ayrıca sosyal biriyim ve yeni insanlarla tanışmak ve farklı fikirler duymak hoşuma gidiyor.",
+    "description3": "Akademik yolculuğum Süleyman Demirel Üniversitesinde başladı, burada hazırlık programında bir yıl İngilizce öğrendim. Daha sonra Bilgisayar Mühendisliğine devam ettim.",
+    "description4": "Daima görsel şeyler, örneğin sanat, tasarım ve mimari gibi, hakkında ilgim vardı. Ayrıca bilgisayar programlamaya da ilgim vardı, bu yüzden frontend geliştirmeye dalışa karar verdim.",
+    "description5": "Şimdi frontend geliştirici olarak çalışıyorum ve işimi çok seviyorum çünkü hem yaratıcı hem de teknik yönlerimi kullanabiliyorum. Eğer benimle aynı ilgi alanlarına sahipseniz, bir kahve içip daha fazla sohbet etmek isterim!"
   }
 }
