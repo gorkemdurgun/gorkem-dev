@@ -52,7 +52,6 @@
   --secondary-1: #ffc93c;
 }
 
-
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -86,7 +85,6 @@
   }
 }
 
-
 * {
   box-sizing: border-box;
   padding: 0;
@@ -96,7 +94,7 @@
 html,
 html {
   scroll-behavior: smooth; /* smooth scrolling */
-  scroll-snap-type: y mandatory; /* snap to the nearest element */
+  scroll-snap-type: y proximity; /* snap to the nearest element if is really near */
 }
 body {
   width: 100vw;
@@ -119,25 +117,21 @@ a {
   text-decoration: none;
 }
 
-
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
 }
 
-
 /* scrollbar */
 
-::-webkit-scrollbar
-{
-	width: 12px;
-	background-color: var(--primary-1);
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: var(--primary-1);
 }
 
-::-webkit-scrollbar-thumb
-{
-	background-color: var(--primary-6);
-	border-top-left-radius:   12px;
-  border-bottom-left-radius:  12px;
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary-6);
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
 }
