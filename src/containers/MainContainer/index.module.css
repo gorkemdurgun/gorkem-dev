@@ -5,24 +5,25 @@
   justify-content: center;
 
   width: auto;
-  height: 100vh;
-  
-  margin-inline: 13.33%;
+  height: auto;
 }
 
 /* navbar */
 
 .navbar {
+  position: sticky;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 
-  width: 100%;
+  width: 120%;
   height: auto;
+  padding-inline: 10%;
 
-  padding-inline: 24px;
-  padding-block: 24px;
+  background: var(--primary-background);
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
 }
 .navbarLogo {
   display: flex;
@@ -45,14 +46,17 @@
   gap: 48px;
 }
 
-.navbarBrand{
-  font-size: 36px;
-  color: var(--primary-4);
+.navbarBrand {
+  position: relative;
+  margin-top: 0px;
+  width: 64px;
+  height: 64px;
   transition: 0.5s;
 }
 .navbarBrand:hover {
-  color: var(--primary-5);
-  scale: 1.2;
+  margin-top: 100px;
+  scale: 3;
+  transform: rotate(-9deg);
 }
 
 .navbarText {
@@ -66,18 +70,23 @@
   scale: 1.2;
   margin: 12px;
 }
+.navbarTextActive {
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--primary-4);
+  transition: 0.5s;
+  border-bottom: 2px solid var(--primary-4);
+}
 
 .navbarIcon {
-  width: 28px;
-  height: 28px;
-
-  margin-top: 6px;
+  width: 24px;
+  height: 24px;
 
   transition: 0.3s;
   color: var(--secondary-2);
 }
 .navbarIcon:hover {
-  scale: 1.2;
+  scale: 1.5;
 }
 
 /* content */
@@ -90,8 +99,15 @@
 
   width: 100%;
   height: 100%;
+}
 
-  padding: 0 20px;
-
-  background-color: darkblue;
+@media screen and (max-width: 991px) {
+  .navbarBrand {
+    width: 48px;
+    height: 48px;
+  }
+  .navbarBrand:hover {
+    margin-top: 24px;
+    scale: 2;
+  }
 }

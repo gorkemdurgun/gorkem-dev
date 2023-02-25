@@ -1,0 +1,18 @@
+{
+  "en": {
+    "descriptionTitle": "About Me",
+    "description1": "Hey there! I'm Görkem Durgun and I'd love to tell you a bit about myself.",
+    "description2": "First things first, I have two cats and they pretty much rule my life :) I'm also a social person and enjoy meeting new people and hearing different ideas.",
+    "description3": "My academic journey started at Süleyman Demirel University, where I spent a year learning English in the preparatory program. Then, I continued my education in Computer Engineering. ",
+    "description4": "I've always been interested in visual things, such as art, design, and architecture. I also had an interest in computer programming, so I decided to dive into frontend development.",
+    "description5": "Now, I work as a frontend developer and I love my job because I can use both my creative and technical sides. If you share similar interests, I'd love to grab a coffee and chat more!"
+  },
+  "tr": {
+    "descriptionTitle": "Hakkımda",
+    "description1": "Merhaba! Ben Görkem Durgun ve kendim hakkında biraz bahsetmek istiyorum.",
+    "description2": "İlk önce, iki kedim var ve hayatımı onlar yönetiyor :) Ayrıca sosyal biriyim ve yeni insanlarla tanışmak ve farklı fikirler duymak hoşuma gidiyor.",
+    "description3": "Akademik yolculuğum Süleyman Demirel Üniversitesinde başladı, burada hazırlık programında bir yıl İngilizce öğrendim. Daha sonra Bilgisayar Mühendisliğine devam ettim.",
+    "description4": "Daima görsel şeyler, örneğin sanat, tasarım ve mimari gibi, hakkında ilgim vardı. Ayrıca bilgisayar programlamaya da ilgim vardı, bu yüzden frontend geliştirmeye dalışa karar verdim.",
+    "description5": "Şimdi frontend geliştirici olarak çalışıyorum ve işimi çok seviyorum çünkü hem yaratıcı hem de teknik yönlerimi kullanabiliyorum. Eğer benimle aynı ilgi alanlarına sahipseniz, bir kahve içip daha fazla sohbet etmek isterim!"
+  }
+}
