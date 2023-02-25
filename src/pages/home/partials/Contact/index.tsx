@@ -6,10 +6,8 @@ import styles from "./index.module.css";
 
 const ContactPage: NextPage = (props) => {
   return (
-    <Container id="section3" fluid className={styles.container}>
-      
+    <Container id="contact" fluid className={styles.container}>
         <CustomText text="Contact" className={styles.leftText} />
-      
     </Container>
   );
 };
