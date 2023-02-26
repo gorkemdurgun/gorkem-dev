@@ -49,14 +49,17 @@
 .navbarBrand {
   position: relative;
   margin-top: 0px;
-  width: 64px;
-  height: 64px;
+  width: 4rem;
+  height: 4rem;
+
   transition: 0.5s;
-}
-.navbarBrand:hover {
-  margin-top: 100px;
-  scale: 3;
-  transform: rotate(-9deg);
+
+  &:hover {
+    margin-top: 8rem;
+
+    scale: 4;
+    transform: rotate(-9deg);
+  }
 }
 
 .navbarText {

@@ -15,7 +15,7 @@ const AboutPage: NextPage = (props) => {
             <CustomText text="Hi," className={styles.leftText} />
             <CustomText text="I'm Görkem" className={styles.leftText} />
             <CustomText
-              text="Frontend Engineer"
+              text="Frontend Developer"
               className={styles.typewriterText}
             />
           </span>
@@ -27,13 +27,33 @@ const AboutPage: NextPage = (props) => {
         </Col>
       </Row>
       <Row lg={6} className={styles.rightSide}>
-        <Col lg={12} className={styles.descriptionContainer}>
-          <CustomText text={en.descriptionTitle} className={styles.rightText} />
-          <CustomText text={en.description1} className={styles.rightText} />
-          <CustomText text={en.description2} className={styles.rightText} />
-          <CustomText text={en.description3} className={styles.rightText} />
-          <CustomText text={en.description4} className={styles.rightText} />
-          <CustomText text={en.description5} className={styles.rightText} />
+        <Col lg={12} className={styles.aboutContainer}>
+          <CustomText
+            text={en.descriptionTitle}
+            className={styles.descriptionTitle}
+          />
+          <span className={styles.descriptionContainer}>
+            <CustomText
+              text={en.description1}
+              className={styles.descriptionText}
+            />
+            <CustomText
+              text={en.description2}
+              className={styles.descriptionText}
+            />
+            <CustomText
+              text={en.description3}
+              className={styles.descriptionText}
+            />
+            <CustomText
+              text={en.description4}
+              className={styles.descriptionText}
+            />
+            <CustomText
+              text={en.description5}
+              className={styles.descriptionText}
+            />
+          </span>
         </Col>
       </Row>
     </Container>
