@@ -6,7 +6,7 @@ import { useState } from "react";
 import { Container, Navbar, Nav, Row, Col } from "react-bootstrap";
 import { MdOutlineNightsStay, MdOutlineWbSunny } from "react-icons/md";
 
-import styles from "./index.module.css";
+import styles from "./index.module.scss";
 
 interface MainContainerProps {
   children: React.ReactNode;
@@ -32,13 +32,13 @@ const CustomNavbar = () => {
   return (
     <Navbar sticky="top" className={styles.navbar}>
       <Navbar.Brand className={styles.navbarLogo}>
-        <h1 className={quicksand.className.concat(" ", styles.navbarBrand)}>
+        <span className={styles.navbarBrand}>
           <Image
             fill
             src="https://media.licdn.com/dms/image/D4D03AQHHUP1JM105eQ/profile-displayphoto-shrink_400_400/0/1676999375589?e=1682553600&v=beta&t=7StIwo_RrWF6WkVrso-0Hdfhjndcbss3w8O35_1x-yQ"
             alt="Logo"
           />
-        </h1>
+        </span>
       </Navbar.Brand>
       <Nav activeKey={0} className={styles.navbarActions}>
         <Nav.Item>

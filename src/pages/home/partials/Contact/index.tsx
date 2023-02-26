@@ -7,7 +7,7 @@ import styles from "./index.module.css";
 const ContactPage: NextPage = (props) => {
   return (
     <Container id="contact" fluid className={styles.container}>
-        <CustomText text="Contact" className={styles.leftText} />
+      <CustomText text="Contact" className={styles.leftText} />
     </Container>
   );
 };
