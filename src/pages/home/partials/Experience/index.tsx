@@ -3,6 +3,7 @@ import { TechnologyBox } from "@/components/TechnologyBox";
 import { SVG } from "@/resources/svg";
 import { NextPage } from "next";
 import Image from "next/image";
+import { useState } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 
 import styles from "./index.module.scss";
@@ -35,20 +36,26 @@ const technologies = [
 ];
 
 const ExperiencePage: NextPage = (props) => {
+  const [activeTech, setActiveTech] = useState(0);
+
   return (
     <Container id="experience" fluid className={styles.container}>
       <Col className={styles.topContainer}>
-        <TechnologyBox image={SVG.ReactIcon} text="React" />
+        <TechnologyBox
+          image={technologies[activeTech].image}
+          text={technologies[activeTech].text}
+        />
         <span className={styles.techsList}>
           {technologies.map((tech, index) => (
-            <Image
-              className={styles.tech}
+            <b
               key={index}
-              src={tech.image}
-              alt={tech.text}
-              width={48}
-              height={48}
-            />
+              className={styles.tech}
+              onClick={() => {
+                setActiveTech(index);
+              }}
+            >
+              <Image src={tech.image} alt={tech.text} width={48} height={48} />
+            </b>
           ))}
         </span>
       </Col>
