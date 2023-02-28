@@ -28,10 +28,14 @@ const AboutPage: NextPage = (props) => {
       </Row>
       <Row lg={6} className={styles.rightSide}>
         <Col lg={12} className={styles.aboutContainer}>
-          <CustomText
-            text={en.descriptionTitle}
-            className={styles.descriptionTitle}
-          />
+          <div className={styles.perspectiveText}>
+            <div className={styles.perspectiveLine}>
+              <p>Who am i?</p>
+            </div>
+            <div className={styles.perspectiveLine}>
+              <p>About Me</p>
+            </div>
+          </div>
           <span className={styles.descriptionContainer}>
             <CustomText
               text={en.description1}
