@@ -1,3 +1,10 @@
+.main{
+  display: flex;
+  flex-direction: column;
+  
+  gap: 3rem;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -64,5 +71,22 @@
     font-size: 20px;
     font-weight: 300;
     color: var(--primary-6);
+  }
+}
+
+.techsList{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 12px;
+  width: 100%;
+  .tech {
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      scale: 1.2;
+      filter: drop-shadow(0 0 1rem lightgray);
+    }
   }
 }
