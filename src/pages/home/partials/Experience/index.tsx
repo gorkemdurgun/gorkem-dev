@@ -1,5 +1,6 @@
 import { CustomText } from "@/components/CustomText";
 import { TechnologyBox } from "@/components/TechnologyBox";
+import { TechnologyCards } from "@/components/TechnologyCards";
 import { SVG } from "@/resources/svg";
 import { NextPage } from "next";
 import Image from "next/image";
@@ -36,28 +37,11 @@ const technologies = [
 ];
 
 const ExperiencePage: NextPage = (props) => {
-  const [activeTech, setActiveTech] = useState(0);
-
   return (
     <Container id="experience" fluid className={styles.container}>
       <Col className={styles.topContainer}>
-        <TechnologyBox
-          image={technologies[activeTech].image}
-          text={technologies[activeTech].text}
-        />
-        <span className={styles.techsList}>
-          {technologies.map((tech, index) => (
-            <b
-              key={index}
-              className={styles.tech}
-              onClick={() => {
-                setActiveTech(index);
-              }}
-            >
-              <Image src={tech.image} alt={tech.text} width={48} height={48} />
-            </b>
-          ))}
-        </span>
+        {/* <TechnologyBox /> */}
+        <TechnologyCards />
       </Col>
       <Col className={styles.bottomContainer}>
         <CustomText text="[resume]" className={styles.title} />
