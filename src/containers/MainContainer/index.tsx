@@ -80,8 +80,8 @@ const CustomNavbar = () => {
 
 const MainContainer: NextPage<MainContainerProps> = ({ children }) => {
   return (
-    <Container fluid="md">
-      <Col lg={12} className={styles.container}>
+    <Container fluid="lg">
+      <Col sm={12} className={styles.container}>
         <CustomNavbar />
         {children}
       </Col>

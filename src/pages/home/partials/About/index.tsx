@@ -19,7 +19,7 @@ const AboutPage: NextPage = (props) => {
               className={styles.typewriterText}
             />
           </span>
-          <span>
+          <span className={styles.buttonContainer}>
             <Button href="#contact" variant="light" className={styles.button}>
               <CustomText text="Contact Me" className={styles.buttonText} />
             </Button>
